@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -33,11 +33,13 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '552528441';
+    var serviceWorkerVersion = '4033089995';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -100,5 +102,25 @@
       loadMainDartJs();
     }
   </script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCcHbCLqLi3_E_nDjvnxOhgtW_kaUC8wV4",
+    authDomain: "godweb-7a3c0.firebaseapp.com",
+    projectId: "godweb-7a3c0",
+    storageBucket: "godweb-7a3c0.appspot.com",
+    messagingSenderId: "861241472719",
+    appId: "1:861241472719:web:ba736bbefa8d48ef5169ba"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
